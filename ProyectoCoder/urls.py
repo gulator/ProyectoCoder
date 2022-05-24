@@ -21,8 +21,9 @@ from AppCoder import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),    
-    path('cursos/', views.curso),
-    path('estudiantes/', views.estudiante),
-    path('profesores/', views.profesor),
-    path('entregables/', views.entregable)
+    path('cursos/', views.curso, name = 'cursos'),
+    path('estudiantes/', views.estudiante, name = 'estudiantes'),
+    path('profesores/', views.profesor, name = 'profesores'),
+    path('entregables/', views.entregable, name = 'entregables'),
+    path('', views.inicio, name = 'inicio'),
 ]
