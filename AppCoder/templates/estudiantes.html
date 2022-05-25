@@ -1,0 +1,26 @@
+{% extends "padre.html" %}
+{% load static %}
+{% block contenidoQueCambia %}
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Apellido</th>
+        <th scope="col">Email</th>
+      </tr>
+    </thead>
+    <tbody>
+        {% for n in estudiante %}
+        <tr>
+        
+        <td>{{n.id}}</td>
+        <td>{{n.nombre}}</td>
+        <td>{{n.apellido}}</td>
+        <td>{{n.email}}</td>
+        
+      </tr>    
+      {% endfor %}  
+    </tbody>
+  </table>
+{% endblock%}

@@ -1965,11 +1965,12 @@ progress {
   --bs-table-active-bg: rgba(0, 0, 0, 0.1);
   --bs-table-hover-color: #212529;
   --bs-table-hover-bg: rgba(0, 0, 0, 0.075);
-  width: 100%;
+  width: 500px;
   margin-bottom: 1rem;
   color: #212529;
   vertical-align: top;
   border-color: #dee2e6;
+  text-align: center;
 }
 .table > :not(caption) > * > * {
   padding: 0.5rem 0.5rem;
